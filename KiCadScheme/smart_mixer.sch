@@ -1,0 +1,178 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A?
+U 1 1 60132004
+P 7850 5200
+F 0 "A?" H 7850 6381 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 7850 6290 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 7850 5200 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 7850 5200 50  0001 C CNN
+	1    7850 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 6013555F
+P 6250 3100
+F 0 "K?" H 6680 3146 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 6680 3055 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6700 3050 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 6250 3100 50  0001 C CNN
+	1    6250 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 5100 7350 5100
+$Comp
+L arduino_sen:HX711 U?
+U 1 1 601DFF55
+P 4200 5100
+F 0 "U?" H 4200 5525 50  0000 C CNN
+F 1 "HX711" H 4200 5434 50  0000 C CNN
+F 2 "" H 4350 5450 50  0001 C CNN
+F 3 "" H 4350 5450 50  0001 C CNN
+	1    4200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduino_sen:load_cell U?
+U 1 1 601E260C
+P 2350 5250
+F 0 "U?" H 2408 5825 50  0000 C CNN
+F 1 "load_cell" H 2408 5734 50  0000 C CNN
+F 2 "" H 2350 5250 50  0001 C CNN
+F 3 "" H 2350 5250 50  0001 C CNN
+	1    2350 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5250 3100 5250
+Wire Wire Line
+	3000 5350 2950 5350
+Wire Wire Line
+	4700 5050 5150 5050
+Wire Wire Line
+	5150 5050 5150 5700
+Wire Wire Line
+	5150 5700 7200 5700
+Wire Wire Line
+	7200 5700 7200 5300
+Wire Wire Line
+	7200 5300 7350 5300
+Wire Wire Line
+	7350 5400 7300 5400
+Wire Wire Line
+	7300 5400 7300 5750
+Wire Wire Line
+	5050 5750 5050 5150
+Wire Wire Line
+	5050 5150 4700 5150
+Wire Wire Line
+	5050 5750 7300 5750
+$Comp
+L arduino_sen:mixer U?
+U 1 1 60221770
+P 4100 2700
+F 0 "U?" H 4133 3315 50  0000 C CNN
+F 1 "mixer" H 4133 3224 50  0000 C CNN
+F 2 "" H 4100 2700 50  0001 C CNN
+F 3 "" H 4100 2700 50  0001 C CNN
+	1    4100 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4900 4700 4900
+Wire Wire Line
+	4600 5300 4750 5300
+Wire Wire Line
+	4750 5300 4750 5450
+$Comp
+L power:+5V #PWR?
+U 1 1 6022BB9B
+P 4850 5450
+F 0 "#PWR?" H 4850 5300 50  0001 C CNN
+F 1 "+5V" H 4865 5623 50  0000 C CNN
+F 2 "" H 4850 5450 50  0001 C CNN
+F 3 "" H 4850 5450 50  0001 C CNN
+	1    4850 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4750 4700 4900
+$Comp
+L power:GND #PWR?
+U 1 1 60239C08
+P 4950 4800
+F 0 "#PWR?" H 4950 4550 50  0001 C CNN
+F 1 "GND" H 4955 4627 50  0000 C CNN
+F 2 "" H 4950 4800 50  0001 C CNN
+F 3 "" H 4950 4800 50  0001 C CNN
+	1    4950 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4750 4950 4750
+Wire Wire Line
+	4950 4750 4950 4800
+Wire Wire Line
+	4750 5450 4850 5450
+Wire Wire Line
+	7200 4500 7200 5100
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 60293F7D
+P 6750 2350
+F 0 "J?" H 6830 2342 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6830 2251 50  0000 L CNN
+F 2 "" H 6750 2350 50  0001 C CNN
+F 3 "~" H 6750 2350 50  0001 C CNN
+	1    6750 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4900 3700 4900
+Wire Wire Line
+	2950 5000 3700 5000
+Wire Wire Line
+	3100 5250 3100 5200
+Wire Wire Line
+	3100 5200 3700 5200
+Wire Wire Line
+	3000 5350 3000 5300
+Wire Wire Line
+	3000 5300 3700 5300
+Wire Wire Line
+	4500 2350 6550 2350
+Wire Wire Line
+	8200 600  9600 600 
+Wire Wire Line
+	6550 2450 6550 2900
+Wire Wire Line
+	5950 3000 5700 3000
+Wire Wire Line
+	4500 2500 5700 2500
+Wire Wire Line
+	5700 2500 5700 3000
+Wire Wire Line
+	5950 3300 5950 4500
+Wire Wire Line
+	5950 4500 7200 4500
+Wire Wire Line
+	6550 3300 6550 6300
+Wire Wire Line
+	6550 6300 7750 6300
+$EndSCHEMATC

@@ -1,0 +1,64 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# HX711
+#
+DEF HX711 U 0 40 Y Y 1 F N
+F0 "U" 150 350 50 H V C CNN
+F1 "HX711" 0 350 50 H V C CNN
+F2 "" 150 350 50 H I C CNN
+F3 "" 150 350 50 H I C CNN
+DRAW
+T 0 -300 -100 50 0 0 0 A+ Normal 0 C C
+T 0 -300 -200 50 0 0 0 A- Normal 0 C C
+T 0 300 50 50 0 0 0 DT Normal 0 C C
+T 0 -300 200 50 0 0 0 E+ Normal 0 C C
+T 0 -300 100 50 0 0 0 E- Normal 0 C C
+T 0 300 200 50 0 0 0 GND Normal 0 C C
+T 0 300 -50 50 0 0 0 SCK Normal 0 C C
+T 0 300 -200 50 0 0 0 VCC Normal 0 C C
+S -400 250 400 -250 0 0 0 N
+X ~ ~ -500 -200 100 R 50 50 1 1 I
+X ~ ~ -500 -100 100 R 50 50 1 1 I
+X ~ ~ -500 100 100 R 50 50 1 1 I
+X ~ ~ -500 200 100 R 50 50 1 1 I
+X ~ ~ 500 -50 100 L 50 50 1 1 O
+X ~ ~ 500 50 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# load_cell
+#
+DEF load_cell U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "load_cell" 0 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 400 0 50 0 0 0 A+ Normal 0 C C
+T 0 400 -100 50 0 0 0 A- Normal 0 C C
+T 0 400 350 50 0 0 0 E+ Normal 0 C C
+T 0 400 250 50 0 0 0 E- Normal 0 C C
+S -500 400 500 -150 0 1 0 N
+X ~ ~ 600 -100 100 L 50 50 1 1 I
+X ~ ~ 600 0 100 L 50 50 1 1 I
+X ~ ~ 600 250 100 L 50 50 1 1 I
+X ~ ~ 600 350 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# mixer
+#
+DEF mixer U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "mixer" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 450 300 100 0 1 0 N
+X ~ ~ 400 200 100 L 50 50 1 1 I
+X ~ ~ 400 350 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
